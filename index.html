@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.production.min.js"
+  ></script>
+  <script
+  crossorigin
+  src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+></script>
+
+<script>
+    let main = React.createElement("div",{
+        style:{
+            backgroundColor:"rgb(255,228,196)",
+            border:"1px solid red",
+            display:"flex",
+            padding:"2% 2% 2% 32%",
+            gap:"3%",
+        },
+        children:[
+            React.createElement("div",{
+                style:{
+                    border:"1px solid black",
+                    backgroundColor:"red",
+                    padding:"5%",
+                }
+            },"1"),
+            React.createElement("div",{
+                style:{
+                    border:"1px solid black",
+                    backgroundColor:"yellow",
+                    padding:"5%",
+                }
+            },"2"),
+            React.createElement("div",{
+                style:{
+                    border:"1px solid black",
+                    backgroundColor:"green",
+                    padding:"5%",
+                }
+            },"3"),
+            React.createElement("div",{
+                style:{
+                    border:"1px solid black",
+                    backgroundColor:"pink",
+                    padding:"5%",
+                }
+            },"4")
+        ],
+    });
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(main);
+</script>
+</html>
